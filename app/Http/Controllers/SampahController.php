@@ -37,4 +37,12 @@ class SampahController extends Controller
         return view('your');
     }
 
+    public function StatusAntar()
+    {
+        $sampah=Sampah::all();
+        // return $sampah;
+        // die;
+        return view('statusAntar',compact('sampah'));
+    }
+
 }
