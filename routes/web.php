@@ -33,6 +33,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
+Route::get('/StatusAntar', 'SampahController@StatusAntar');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 

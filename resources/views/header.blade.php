@@ -1,28 +1,45 @@
 @extends('layouts.app')
-<div class = "jumbotron" style="background-color:#51ABA4; height: 123px;">
+<div class = "jumbotron" style="background-color:#3a7d77
+; height: 0px;">
 
 <div class="row" style="margin-left:0%;">
 
 <div class="col-sm-3">
-<a href="index.php"><img src ="{{ ('ikon/Untitled-10.png') }}" style ="width:100px; "></a>
+<p style="font:simsun; color:white;">SiPahias</p>
 </div>
 
 
 
 <div class="col-sm-5" style="margin-left:33%;">
 <ul class="nav justify-content-center" >
-  <li class="nav-item">
-    <a class="nav-link active" href="#">Tukar Sampah</a>
+
+<li class="nav-item">
+    <a class="nav-link" href="dashboard">Beranda</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Home</a>
-  </li>
+
+ 
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tukar Sampah</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="antar">Antar</a>
+      <a class="dropdown-item" href="jemput">Jemput</a>
+    </div>
+    </li>
+
   <li class="nav-item">
     <a  class="nav-link" href="#">Tentang</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link " href="#">Poin</a>
-  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hai, Eric Nam</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Jumlah Poin</a>
+      <a class="dropdown-item" href="#">Akun</a>
+      <a class="dropdown-item" href="#">Keluar</a>
+    </div>
+    </li>
+
+
   <li class="nav-item">
     <img src="{{ ('ikon/user.png') }}" style ="width : 30px; height:30px; margin-top:5px;" >  
   </li>
