@@ -12,6 +12,16 @@ class SampahController extends Controller
         return view('edit');
     }
 
+    public function editprofil()
+    {
+        return view('editprofil');
+    }
+
+    public function editpassword()
+    {
+        return view('editpassword');
+    }
+
     public function tukarpoin()
     {
         return view('tukarpoin');
@@ -31,6 +41,12 @@ class SampahController extends Controller
     {
         return view('jemput');
     }
+
+    public function jemput2()
+    {
+        return view('jemput2');
+    }
+
 
     public function your()
     {
